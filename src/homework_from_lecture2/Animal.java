@@ -8,17 +8,21 @@ public class Animal {
     private String word;
 
     //creating constructor
-    Animal(String name){
+    Animal(String name, int steps, String word){
         this.name=name;
+        this.steps=steps;
+        this.word=word;
     }
 
     //creating method GO
+    @Deprecated
     public int go(int steps){
         this.steps=steps;
         return steps;
     }
 
     //creating method SAY
+    @Deprecated
     public String say(String word){
         this.word=word;
         return word;
